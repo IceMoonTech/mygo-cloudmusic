@@ -1,5 +1,19 @@
 # MyGo本地音乐客户端
 
+ Powshell
+winget install --id GoLang.Go -e
+
+Powshell 重开
+go version
+cd D:\Tools\mygo-cloudmusic-main
+$env:GOPROXY = 'https://goproxy.cn,direct'
+go tool mygo dev
+
+/D:/Tools/mygo-cloudmusic-main/.mygo/dev/windows-amd64/MyGo 云音乐 Dev.exe   启动
+
+
+
+
 用 Go 和 [MyGo](https://github.com/egoist/mygo) 写的第三方桌面音乐客户端，原生界面，无 WebView。
 
 专注于自建与私有云音乐平台：支持 **飞牛音乐（FN Music）**、**Songloft** 以及 **Navidrome / Jellyfin / Gonic 等 Subsonic 兼容服务**。各平台的账号、歌单、收藏与播放设置互相独立，底部播放器、正在播放页、歌词、缓存等共用同一套高品质体验。
